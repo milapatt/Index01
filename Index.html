@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabajo final</title>
+
+	<link rel="stylesheet" href="css/style0.css">
+	<link rel="stylesheet" href="css/nosotros.css">
+	<link rel="stylesheet" href="css/servicios.css">
+	<link rel="stylesheet" href="css/contacto.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquerygeneral.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" id="icono">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/jquery-latest.js"></script>
+	<script src="js/arriba.js"></script>
+	<script>
+		$(function(){
+
+			$('a[href*=#]').click(function() {
+
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+				&& location.hostname == this.hostname) {
+
+					var $target = $(this.hash);
+
+					$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+					if ($target.length) {
+
+						var targetOffset = $target.offset().top;
+
+						$('html,body').animate({scrollTop: targetOffset}, 1000);
+
+						return false;
+					}
+				}
+			});
+		});
+</script>
+
+</head>
+<body>
+	<span class="ir-arriba icon-arrow-up"></span>
+	<header>
+		<div class="menu-bar">
+				<a id="logo-header" href="#">
+					<span class="site-name"><img src="img/logo-peque.png" width="90%"></span>
+			</a>
+			<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+			<ul>
+				<li><a href="Index.html">Inicio</a></li>
+				<li><a href="#nosotros">Nosotros</a>
+					<ul>
+						<li><a href="#mision">Misión</a></li>
+						<li><a href="#vision">Visión</a></li>
+					</ul>
+				</li>
+				<li><a href="#categorias">Categorías</a>
+					<ul>
+						<li><a href="#infantil">Infantil</a></li>
+						<li><a href="#juvenil">Juvenil</a></li>
+						<li><a href="#idiomas">Idiomas</a></li>
+						<li><a href="#prfesional">Profesional</a></li>
+						<li><a href="#literatura">Literatura</a></li>
+						<li><a href="#personal">Crecimiento personal</a></li>
+					</ul>
+				</li>
+				<li><a href="#servicios">Servicios</a>
+					<ul>
+						<li><a href="#promociones">Promociones</a></li>
+						<li><a href="#eventos">Eventos</a></li>
+					</ul>
+				</li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="contenedor">
+			<img src="img/fondo1-1.jpg" width="100%">
+			<div class="content-texto">
+				<h2>UN PERÚ QUE LEE, ES UN PAÍS CON CULTURA</h2>
+				<p>Navega por el sitio web</p>
+			</div>
+			<div class="content-1"></div>
+		</div>
+
+	<div class="barra"><h3>¡Todavía estás a tiempo de regalar libros esta Navidad!</p></div>
+
+	<section id="main-content">	
+		<article>
+			<header id="bienvenido">
+				<h1>BIENVENIDO A LIBROS EN LÍNEA</h1>
+			</header>
+				<img src="img/ejemplo4.jpg" id="img-principal">
+			<div class="content">
+				<p>Librería online y Librería en Lima, Libros En Línea es una tienda Online oficial de libros en Lima Metropolitana.</p>
+				<p>En Libros En Línea podrás encontrar libros peruanos, libros de idiomas, libros profesionales, libros de diseños de moda, mangas, cómics, entre otros.</p>
+				<p>Nuestro enfoque son los libros, por lo que somos expertos en encontrar libros de diferentes autores en todo el mundo al alcance de tu mano.</p>
+				<p>Contamos con más de 10 años en Lima, pronto en otros distritos de Lima-Sur y Lima-Norte.</p>
+			</div>
+
+			<header id="libros">
+				<h1>Libros</h1>
+			</header>
+				<div class="content">
+					<p>5%  de descuento en libros y envíos a casa GRATIS sin pedido mínimo* si eres cliente frecuente</p></div>
+				<div id="contenedor-slider" class="contenedor-slider">
+				<div id="slider" class="slider">
+					<section class="slider_section"><img src="img/libro-joven.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/libro-infantil.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/libro-empresarial.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/libro-peruano.jpg" class="slider_img"></section>
+				</div>
+				<div id="btn-prev" class="btn-prev">&#60;</div>
+				<div id="btn-next" class="btn-next">&#62;</div>
+			</div>
+			<script src="js/slider.js"></script>
+			<div id="social">
+				<a href="#categorias">Ver más</a>
+			</div>
+			</div>
+			<header id="novedades">
+				<h1>Novedades</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+
+					<div class="articulo1">
+						<div class="titular">¡Libros que no debes perderte este mes!</div>
+							<img src="img/ejemplo.jpg" width="50%">
+						<div class="observa">No te pierdas nuestras recomendaciones</div>
+					</div>
+
+					<div class="articulo2">
+							<div class="titular">¡Te retamos a leerlos todos, sólo hasta fin de año!</div>
+								<img src="img/ejemplo2.jpg" width="50%">
+							<div class="observa">No te pierdas nuestras recomendaciones</div>
+					</div>
+
+					<div class="articulo3">
+							<div class="titular">¡Todavía estas a tiempo de regalar un libro!</div>
+								<img src="img/ejemplo3.jpg" width="50%" >
+							<div class="observa">No te pierdas nuestras recomendaciones</div>
+					</div>
+				</div>
+			</div>
+			<div id="otro-menu">
+				<a href="#equipo">Nuestro Equipo</a>
+				<a href="#mision">Misión</a>
+				<a href="#vision">Visión</a>
+				<a href="#clientes">Nuestros clientes</a>
+			</div>
+			<header id="nosotros">
+				<h1>Historia</h1>
+			</header>
+				<img src="img/fundador.jpg" alt="" id="img-principal">
+			<div class="content">
+				<p>Libros en Línea Perú pertenece al grupo del Ministerio de Cukltura; fue fundada en 2010 con más de 10 mil Clientes en toda Lima Metropolitana</p>
+				<p>En 2015 el grupo nos permitió extender el mercado en distintas zonas de Lima con otras librerías de diferentes sedes en los distritos como Villa El Salvador, San Juan de Miraflores, Surco, entre otros.</p>
+				<p>Libros en Línea fue fundada en 2010 por Manuel Quispe Suca con ayuda de alumnos senatinos que apoyaron a crear la página web,con el objetivo de incentivar a la lectura tanto en los niños,jóvenes y adultos. Actualmente cuenta con 10 sedes en la ciudad de Lima: Angamos, Larco, La Molina, San Isidro, Encalada, San Miguel y  Los Olivos.</p>
+			</div>
+			<header id="equipo">
+				<h1>Nuestro Equipo</h1>
+			</header>
+				<div class="content">
+						<div class="box-area">
+					<div class="container-equipo">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="tes-area" id="tes-area">
+									<div class="tes-item">
+										<div class="img-area">
+											<img src="img/equipo5.jpg" id="circulo">
+										</div>
+										<div class="name">Alejandro Pérez</div>
+										<div class="designation">Líder</div>
+										<div class="tes-text">Juega un rol muy importante para la empresa en la que trabaja durante 10 años, su labor es dirigir, organizar los eventos y disfrutar de la lectura.</div>
+									</div>
+									<div class="tes-item">
+										<div class="img-area">
+											<img src="img/equipo3.jpg" id="circulo">
+										</div>
+										<div class="name">Ana Ramiréz</div>
+										<div class="designation">Bibliotecaria</div>
+										<div class="tes-text">Durante los últimos años no hay naide que se compare con nuestra bibliotecaria que te ayuda a encontrar el libro que más deseas.</div>
+									</div>
+									<div class="tes-item">
+										<div class="img-area">
+											<img src="img/equipo1.jpg" id="circulo">
+										</div>
+										<div class="name">Alison Pardo</div>
+										<div class="designation">Fotografa</div>
+										<div class="tes-text">Entre las mejores fotografas de todo Lima, Alison nos ayuda con sacar las mejores tomas de nuestros productos.</div>
+									</div>
+									<div class="tes-item">
+										<div class="img-area">
+											<img src="img/equipo2.jpg" id="circulo">
+										</div>
+										<div class="name">Angela Olivares</div>
+										<div class="designation">Escritora</div>
+										<div class="tes-text">Ganadora de varios Diplomas y Honores, reconocida a nivel Nacional, Angela fue una de las que empezó de ser bibliotecaria a Escritora.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+				<script>
+					$('#tes-area').owlCarousel({
+						singleItem: true,
+						transitionStyle: 'fadeUp',
+						mouseDrag: false,
+						touchDrag: false,
+						autoPlay: 3000,
+						pagination: true
+					});
+				</script>
+			</div>
+			<header id="mision">
+				<h1>Nuestra Misión</h1>
+			</header>
+			<div class="content">
+				<p>Facilitar contenidos educativos y culturales a nuestros usuarios con el fin de brindar acceso a las más diversas áreas del conocimiento humano, expresado en cualquier idioma y a través de cualquier medio, comprometido con el desarrollo de la calidad educativa de nuestro país.</p>
+				<p>El ejercicio de nuestra misión deberá ser realizado de forma ética, con el máximo de calidad de prestación de servicios, a través de la identificación y satisfacción de las necesidades de nuestros clientes, en trabajo y en sociedad con nuestros proveedores y colaboradores.</p>
+			</div>
+			<header id="vision">
+				<h1>Nuestra Visión</h1>
+			</header>
+			<div class="content">
+				<p>“Ser una empresa referente en el ámbito educativo y cultural peruano, comprometida en superar los desafíos del mercado y de la educación del siglo XXI, a través de nuestra actividad comercial, cultural y de servicio "</p>
+			</div>
+			<header id="clientes">
+				<h1>Lo que dicen nuestros clientes</h1>
+			</header>
+			<div class="content">
+				<div  class="card-area">
+					<div class="img-area">
+						<div class="sin-img" style="background-image: url(img/cliente1.jpg);"></div>
+					</div>
+					<div class="img-text">
+						<h1>Mariana López</h1>
+						<h2>ENCANTADA</h2>
+						<p>Son una empresa de la región que se consolida y sale adelante gracias a sus excelentes productos, inigualables en calidad y con una presentación impecable, dándonos la oportunidad de recibir nuestros libros y personalizar cada detalle. Sus libros, estantes, espacios luminosos son los mejores.</p>
+						<p>
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-linkedin"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-pinterest"></i>
+						</p>
+					</div>
+				</div>
+				<div  class="card-area">
+					<div class="img-area">
+						<div class="sin-img"style="background-image: url(img/cliente2.jpg);"></div>
+					</div>
+					<div class="img-text">
+						<h1>Eduardo Cornejo</h1>
+						<h2>EXCELENTE CALIDAD</h2>
+						<p>Sus espacios para dedicar timepo a la lectura están decoradas de acuerdo a las temporadas, por ejemplo en Hallowen fui con un grupo de miagos y me fascinó el ambiente, por ello voy cada temporada a ver que hay de nuevo.Una vez que entrasno hay otro lugar que quisieras ir, las recominedo a mi familia y conocidos vernir.</p>
+						<p>
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-linkedin"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-pinterest"></i>
+						</p>
+					</div>
+				</div>
+				<div  class="card-area">
+					<div class="img-area">
+						<div class="sin-img" style="background-image: url(img/cliente3.jpg);"></div>
+					</div>
+					<div class="img-text">
+						<h1>Sabrina Zárate</h1>
+						<h2>PACÍFICO</h2>
+						<p>Encontrar en toda la tienda tus libros preferidos es una aventura, porque puedes quedarte horas y horas, en el mismo lugar leyendo sin que te dieras cuenta de que las horas pasan volando al igual que tu imaginación, es un lugar muy agradable y traqnuilo.</p>
+						<p>
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-linkedin"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-pinterest"></i>
+						</p>
+					</div>
+				</div>		
+			</div>
+			<header id="categorias">
+				<h1>Categorías</h1>
+			</header>
+			<div id="otro-menu">
+				<a href="#infantil">Infantil</a>
+				<a href="#juvenil">Juvenil</a>
+				<a href="#idiomas">Idiomas</a>
+				<a href="#profesional">Profesional</a>
+				<a href="#literatura">Literatura</a>
+				<a href="#crecimiento">Crecimiento personal</a>
+			</div>
+			<header id="infantil">
+				<h1>Sección Infantil</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+					<div class="articulo1">
+						<div class="titular">Infantil de 3 a 5 años</div>
+							<img src="img/nene1.jpg" width="50%">
+						<div class="observa" style="color: #fff;">S/55.00</div>
+					</div>
+					<div class="articulo2">
+							<div class="titular">Infantil de 6 a 8 años</div>
+								<img src="img/nene3.jpg" width="50%">
+							<div class="observa" style="color: #fff;">S/20.00</div>
+					</div>
+					<div class="articulo3">
+							<div class="titular">Infantil de 9 a 11 años</div>
+								<img src="img/nene2.jpg" width="50%" >
+							<div class="observa" style="color: #fff;">S/30.00</div>
+					</div>
+				</div>
+			</div>
+
+			<header id="juvenil">
+				<h1>Sección Juvenil</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+					<div class="articulo1">
+						<div class="titular">Manga</div>
+							<img src="img/juvenil1.jpg" width="50%">
+						<div class="observa" style="color: #fff;">S/55.00</div>
+					</div>
+					<div class="articulo2">
+							<div class="titular">Dramas</div>
+								<img src="img/juvenil3.jpg" width="50%">
+							<div class="observa" style="color: #fff;">S/20.00</div>
+					</div>
+					<div class="articulo3">
+							<div class="titular">Cómics</div>
+								<img src="img/juvenil2.jpg" width="50%" >
+							<div class="observa" style="color: #fff;">S/30.00</div>
+					</div>
+				</div>
+			</div>
+			
+			<header id="idiomas">
+				<h1>Sección Idiomas</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+					<div class="articulo1">
+						<div class="titular">Inglés</div>
+							<img src="img/idiomas1.jpg" width="50%">
+						<div class="observa" style="color: #fff;">S/55.00</div>
+					</div>
+					<div class="articulo2">
+							<div class="titular">Portugués</div>
+								<img src="img/idiomas3.jpg" width="50%">
+							<div class="observa" style="color: #fff;">S/20.00</div>
+					</div>
+					<div class="articulo3">
+							<div class="titular">Francés</div>
+								<img src="img/idiomas2.jpg" width="50%" >
+							<div class="observa" style="color: #fff;">S/30.00</div>
+					</div>
+				</div>
+			</div>
+			<header id="profesional">
+				<h1>Sección Profesional</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+					<div class="articulo1">
+						<div class="titular">Técnico</div>
+							<img src="img/profesional1.jpg" width="50%">
+						<div class="observa" style="color: #fff;">S/55.00</div>
+					</div>
+					<div class="articulo2">
+							<div class="titular">Universitario</div>
+								<img src="img/profesional3.jpg" width="50%">
+							<div class="observa" style="color: #fff;">S/20.00</div>
+					</div>
+					<div class="articulo3">
+							<div class="titular">Maestría</div>
+								<img src="img/profesional2.jpg" width="50%" >
+							<div class="observa" style="color: #fff;">S/30.00</div>
+					</div>
+				</div>
+			</div>
+			<header id="literatura">
+				<h1>Sección Literatura</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+					<div class="articulo1">
+						<div class="titular">Literatura Moderna</div>
+							<img src="img/literatura1.jpg" width="50%">
+						<div class="observa" style="color: #fff;">S/55.00</div>
+					</div>
+					<div class="articulo2">
+							<div class="titular">Ensayos</div>
+								<img src="img/literatura3.jpg" width="50%">
+							<div class="observa" style="color: #fff;">S/20.00</div>
+					</div>
+					<div class="articulo3">
+							<div class="titular">Novela</div>
+								<img src="img/literatura2.jpg" width="50%" >
+							<div class="observa" style="color: #fff;">S/30.00</div>
+					</div>
+				</div>
+			</div>
+			<header id="crecimiento">
+				<h1>Sección Creciemiento Personal</h1>
+			</header>
+			<div class="content">
+				<div class="envoltura">
+					<div class="articulo1">
+						<div class="titular">Para el cuerpo</div>
+							<img src="img/personal1.jpg" width="50%">
+						<div class="observa" style="color: #fff;">S/55.00</div>
+					</div>
+					<div class="articulo2">
+							<div class="titular">Para el cerebro</div>
+								<img src="img/personal3.jpg" width="50%">
+							<div class="observa" style="color: #fff;">S/20.00</div>
+					</div>
+					<div class="articulo3">
+							<div class="titular">Para el alma</div>
+								<img src="img/personal2.jpg" width="50%" >
+							<div class="observa" style="color: #fff;">S/30.00</div>
+					</div>
+				</div>
+			</div>
+			<div id="otro-menu">
+				<a href="#promociones">Promociones</a>
+				<a href="#eventos">Eventos</a>
+			</div>
+		<article>
+			<header id="servicios">
+				<h1>Estamos aquí para usted</h1>
+			</header>
+			<div class="content">
+				<p>Somos una empresa de retail especializada, dedicada a la venta minorista de libros y artículos de entretenimiento cultural. Nuestras actividades se concentran en la venta de libros diversos en un ambiente agradable, diferenciado por nuestra calidad de servicio y el asesoramiento de nuestros libreros. </p><br>
+				<div id="contenedor-slider" class="contenedor-slider">
+				<div id="slider" class="slider">
+					<section class="slider_section"><img src="img/buying-book.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/buying-book2.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/buying-book3.jpg" class="slider_img"></section>
+					<section class="slider_section"><img src="img/buying-book4.jpg" class="slider_img"></section>
+				</div>
+				<div id="btn-prev" class="btn-prev">&#60;</div>
+				<div id="btn-next" class="btn-next">&#62;</div>
+			</div>
+			<script src="js/slider.js"></script>
+
+				<div class="wrapper-barra">
+					<div class="barras">
+						<div class="single-barra barra1">50% de Visitas</div>
+					</div><br><br>
+					<div class="barras">
+						<div class="single-barra barra2">70% de Compras mensuales</div>
+					</div><br><br>
+					<div class="barras">
+						<div class="single-barra barra3">35% de Devoluciones</div>
+					</div>
+				</div>
+			</div>
+
+			<header id="promociones">
+				<h1>Promociones</h1>
+			</header>
+			<div class="content">
+				<div class="pricing-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-sm-6">
+								<div class="single-price">
+									<div class="price-header">
+										<h3 class="title">Ofertas para libros de Niños</h3>
+									</div>
+									<div class="price-value">
+										<div class="value">
+											<span class="currecncy">$</span>
+											<span class="amount">19. <span>99</span></span>
+											<span class="month">/por este mes</span>
+										</div>
+									</div>
+									<ul class="deals">
+										<li>Cuentos</li>
+										<li>Fabulas</li>
+										<li>Educativos</li>
+										<li>Historietas</li>
+									</ul>
+									<a href="#">Consíguelo</a>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="single-price">
+									<div class="price-header">
+										<h3 class="title">Oferta para Cómics</h3>
+									</div>
+									<div class="price-value">
+										<div class="value">
+											<span class="currecncy">$</span>
+											<span class="amount">39. <span>99</span></span>
+											<span class="month">/por este mes</span>
+										</div>
+									</div>
+									<ul class="deals">
+										<li>Marvel</li>
+										<li>DCómics</li>
+										<li>Condorito</li>
+										<li>Mafalda</li>
+									</ul>
+									<a href="#">Consíguelo</a>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6">
+								<div class="single-price">
+									<div class="price-header">
+										<h3 class="title">Oferta para tus compras</h3>
+									</div>
+									<div class="price-value">
+										<div class="value">
+											<span class="currecncy">$</span>
+											<span class="amount">99. <span>99</span></span>
+											<span class="month">/por este mes</span>
+										</div>
+									</div>
+									<ul class="deals">
+										<li>Envíos gratis</li>
+										<li>Libro en Línea Plus</li>
+										<li>Preventa</li>
+										<li>Trabaja con nosotros</li>
+									</ul>
+									<a href="#">Consíguelo</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<header id="eventos">
+				<h1>Eventos</h1>
+			</header>
+			<div class="content">
+				<div id="container-evento">
+						<h2> ¡Súmate tú también!</h2>
+					<div id="imagen">
+						<img src="img/evento.jpg" width="100%" height="auto">
+					</div>
+					<div id="descripción">
+						Es una campaña donde niños y niñas participan para concursos escribir cuentos.
+					</div>
+				</div>
+				<div id="container-evento">
+						<h2> Maratón de Lectura</h2>
+					<div id="imagen">
+						<img src="img/evento2.jpg" width="100%" height="auto">
+					</div>
+					<div id="descripción">
+						Se organiza una maratón para comprensión lectora por el Ministerio de Cultura.
+					</div>
+				</div>
+				<div id="container-evento">
+						<h2> Dibuja tus personajes </h2>
+					<div id="imagen">
+						<img src="img/evento3.jpg" width="100%" height="auto">
+					</div>
+					<div id="descripción">
+						Disfruta de tus mangas preferidos y participa en dibujarlos este 26 de Diciembre.
+					</div>
+				</div>
+			</div>
+			<div id="otro-menu">
+				<a href="#contacto">Contáctanos</a>
+				<a href="#mapa">Ubícanos</a>
+			</div>
+		<article>
+			<header id="contacto">
+				<h1>Contáctenos</h1>
+			</header>
+			<div class="content">
+				<div class="wrapper-contacto">
+					<div class="form-area-contacto">
+						<div class="img-area-contacto">
+							<div class="left-text-contacto">
+								<i class="fa fa-map-marker"></i>Dirección
+								<p>Villa El Salvador, Lima-Perú</p>
+								<i class="fa fa-envelope"></i>Correo
+								<p>LibroEnLinea@gmail.com</p>
+							</div>
+						</div>
+						<div class="right-text-contacto">
+							<h2>Ponerse en contacto</h2>
+							<input type="text" placeholder="Ingrese su nombre">
+							<input type="text" placeholder="Ingrese su correo">
+							<textarea cols="30" rows="5" placeholder="Asunto"></textarea>
+							<a href="#">Enviar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<header id="mapa">
+				<h1>Ubícanos</h1>
+			</header>
+			<div class="content">
+				<div class="contact-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.888395500975!2d-77.03102068255613!3d-12.119787999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c819e8506683%3A0x3bc4556fd5c634f3!2sIbero%20Librer%C3%ADas!5e0!3m2!1ses!2spe!4v1608605926295!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+			</div>
+		</article>
+	</section>
+
+	<div class="box-social-media">
+		<div class="single-box" style="background: #3b5998">
+			<a href="http://www.facebook.com/"><p>Síguenos en <img src="img/facebook.png" alt=""></p></a>
+		</div>
+		<div class="single-box" style="background: #4099ff">
+			<a href="http://www.twitter.com/"><p>Síguenos en <img src="img/twitter.png" alt=""></p></a>
+		</div>
+		<div class="single-box" style="background: #ff0000">
+			<a href="http://www.youtube.com/"><p>Síguenos en <img src="img/youtube.png" alt=""></p></a>
+		</div>
+	</div>
+	<div class="barra-inferior">
+			<div class="icono-solo">
+				<img src="img/icono1.png" alt="">
+				<p>Compra segura</p>
+			</div>
+			<div class="icono-solo">
+				<img src="img/icono2.png" alt="">
+				<p>Envíos gratis</p>
+			</div>
+			<div class="icono-solo">
+				<img src="img/icono3.png" alt="">
+				<p>Establecimiento moderno</p>
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="l-footer">
+			<h1><img src="img/logo-peque.png" alt=""></h1>
+			<p>Libros en línea, tienda Online oficial de libros en Lima.</p>
+		</div>
+		<ul class="r-footer">
+			<li>
+				<h2>Información</h2>
+				<ul class="box-pie">
+					<li><a href="Index.html">Inicio</a></li>
+					<li><a href="#nosotros">Nosotros</a></li>	
+					<li><a href="#contacto">Contáctenos</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2>Categorías</h2>
+				<ul class="h-box">
+					<li><a href="#infantil">Infantil</a></li>
+					<li><a href="#juvenil">Juvenil</a></li>
+					<li><a href="#idiomas">Idiomas</a></li>
+					<li><a href="#infantil">Profesional</a></li>
+					<li><a href="#juvenil">Literatura</a></li>
+					<li><a href="#idiomas">Crecimiento personal</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2>Contacto</h2>
+				<ul class="box-pie">
+					<li><a href="#contacto">
+						(Lun-Vie 9 a.m. a 5 p.m.)
+						Oficina administrativa</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="b-footer">
+			<p> &copy; Todos los derechos reservados a  Milagros Soncco 2020</p>
+		</div>
+	</footer>
+</body>
+</html>

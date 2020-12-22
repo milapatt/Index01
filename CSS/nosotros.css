@@ -1,0 +1,141 @@
+*{
+	margin: 0; padding: 0; font-family: poppins;
+}
+body{
+	background: #DEDEDE;
+}
+.card-area{
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto;
+	box-shadow: 0px 2px 20px rgba(0,0,0,0.5);
+	border: 2px solid #000;
+	line-height: 1.5;
+	border-radius: 2px;
+	overflow: hidden;
+	z-index: 0; 
+}
+.card-area:hover .sin-img{
+	transform: scale(1.1);
+}
+.card-area .sin-img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	transition: 0.9s;
+}
+.card-area .img-area{
+	position: relative;
+	z-index: 0;
+	height: 200px;
+}
+.card-area .img-text{
+	padding: 1em;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+}
+.card-area .img-text h1{
+	line-height: 1;
+	margin: 0;
+	font-size: 1.6em;
+}
+.card-area .img-text h2{
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: tomato;
+	margin-top: 10px;
+}
+.card-area{
+	flex-direction: row;
+	max-width: 450px;
+}
+.card-area .img-area{
+	flex-basis: 50%;
+	height: auto;
+}
+.card-area .img-text{
+	flex-basis: 60%;
+}
+.card-area .img-text:before{
+	-webkit-transform: skewX(4deg);
+	transform: skewX(4deg);
+	content: '';
+	background: #fff;
+	width: 30px;
+	position: absolute;
+	left: -10px;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.img-text p i{
+	margin: 0 5px;
+}
+
+.box-area{
+	padding: 20px 50px;
+}
+.img-area #circulo{
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 20px auto;
+	border: 5px solid #fff;
+}
+.img-area{
+	width: 100%;
+	height: 0 auto; text-align: center;
+}
+.name{
+	font-size: 30px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.designation{
+	text-align: center;
+	color: #262626;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+.tes-text{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	line-height: 1.9;
+	color: #000;
+}
+.tes-area .owl-pagination{
+	margin-top: 20px;
+	text-align: center;
+}
+.tes-area .owl-pagination .owl-page{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	margin: 0 auto;
+}
+.tes-area .owl-pagination .owl-page span{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	display: block;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	transition: all .3s ease;
+}
+.tes-area .owl-pagination .owl-page.active span{
+	background: #000;
+}
